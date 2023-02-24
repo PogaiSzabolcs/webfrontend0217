@@ -67,8 +67,8 @@ export default class FetchExample extends React.Component {
 
           <View >
           <Text style={{color:"green",fontSize:20,textAlign:"center",marginTop:15,marginBottom:5}}   >{item.etel_nev} </Text>
-          <Text style={{color:"blue",fontSize:20,textAlign:"center",marginTop:15,marginBottom:5}}   >{item.etel_kcal} </Text>
-          <Text style={{color:"grey",fontSize:20,textAlign:"center",marginTop:15,marginBottom:5}}   >{item.etel_prot} </Text>
+          <Text style={{color:"blue",fontSize:20,textAlign:"center",marginTop:15,marginBottom:5}}   >{item.etel_kcal} kcal/100g </Text>
+          <Text style={{color:"grey",fontSize:20,textAlign:"center",marginTop:15,marginBottom:5}}   >{item.etel_prot} g protein/100g </Text>
           <Image  source={{uri: IP.ipcim +item.etel_kep}} style={{width:300,height:300,marginLeft:"auto",marginRight:"auto"}} />       
           </View>
 
