@@ -20,6 +20,7 @@ import Recept from "./sajatosztalyok/Recepttabla"
 import Recepttorles from "./sajatosztalyok/Recepttorles"
 import Etelfeltoltes from "./sajatosztalyok/Etelfelvitel"
 import Kezdolap from "./sajatosztalyok/Kezdolap"
+import Receptfeltoltes from "./sajatosztalyok/Receptfelvitel"
 
 class App extends Component {
   constructor(props) {
@@ -78,6 +79,11 @@ class App extends Component {
             <li className="nav-item">
               <Link to={"/Etel"} className="nav-link">
                 Ételek
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to={"/receptfeltoltes"} className="nav-link">
+                Recept feltöltés
               </Link>
             </li>
 
@@ -154,6 +160,7 @@ class App extends Component {
             <Route path="/Recept" component={Recept} />
             <Route path="/Etelfeltoltes" component={Etelfeltoltes} />
             <Route path="/Kezdolap" component={Kezdolap} />
+            <Route path="/receptfeltoltes" component={Receptfeltoltes} />
 
 
             
