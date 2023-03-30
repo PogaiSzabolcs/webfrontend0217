@@ -66,11 +66,11 @@ export default class FetchExample extends React.Component {
           renderItem={({item}) => 
 
           <View >
-          <Text style={{color:"green",fontSize:20,textAlign:"center",marginTop:15,marginBottom:5}}   >{item.recept_neve} </Text>
-          <Text style={{color:"orange",fontSize:20,textAlign:"center",marginTop:15,marginBottom:5}}   >{item.recept_osszetev} </Text>
-          <Text style={{color:"brown",fontSize:20,textAlign:"center",marginTop:15,marginBottom:5}}   >{item.recept_elkesz} </Text>
-          <Text style={{color:"blue",fontSize:20,textAlign:"center",marginTop:15,marginBottom:5}}   >{item.recept_kcal} </Text>
-          <Text style={{color:"grey",fontSize:20,textAlign:"center",marginTop:15,marginBottom:5}}   >{item.recept_prot} </Text>
+          <Text style={{color:"green",fontSize:40,textAlign:"center",marginTop:15,marginBottom:5}}   >{item.recept_neve}</Text>
+          <Text style={{color:"orange",fontSize:20,textAlign:"center",marginTop:15,marginBottom:5}}   >{item.recept_osszetev}</Text>
+          <Text style={{color:"brown",fontSize:18,textAlign:"center",marginTop:15,marginBottom:5}}   >{item.recept_elkesz}</Text>
+          <Text style={{color:"blue",fontSize:25,textAlign:"center",marginTop:15,marginBottom:5}}   >{item.recept_kcal} kcal/adag </Text>
+          <Text style={{color:"grey",fontSize:25,textAlign:"center",marginTop:15,marginBottom:5}}   >{item.recept_prot} g protein/adag </Text>
           <Image  source={{uri: IP.ipcim +item.recept_kep}} style={{width:300,height:300,marginLeft:"auto",marginRight:"auto"}} />       
           </View>
 
